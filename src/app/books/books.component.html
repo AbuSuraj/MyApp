@@ -3,10 +3,10 @@
    <ng-container *ngIf="!isShowing">Show Books</ng-container> 
    <ng-container *ngIf="isShowing">Hide Books</ng-container>
 </button>
-<ul *ngIf="isShowing">
+<ng-container *ngIf="isShowing">
     <li *ngFor="let book of books; let i=index">
       {{i+1}}  <img  [src]="book.src" [alt]="book.name" style ="width: 100px" >
         {{book.name}} By {{book.author}}
     </li>
    
-</ul>
+</ng-container>
