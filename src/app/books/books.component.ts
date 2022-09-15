@@ -12,7 +12,12 @@ src: string = "https://images-eu.ssl-images-amazon.com/images/I/41xShlnTZTL._SX2
 name2: string = "Pragmatic Programmer";
 author2: string = " David Thomas "
 src2: string = "https://m.media-amazon.com/images/P/B07VRS84D1.01._SCLZZZZZZZ_SX500_.jpg" ;
-isDisabled = false
+isDisabled:boolean = false;
+handleClick(){
+  this.isDisabled = true;
+  console.log("Button works")
+}
+myName: string = "";
   constructor() { }
 
   ngOnInit(): void {
