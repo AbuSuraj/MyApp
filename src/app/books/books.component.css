@@ -1,0 +1,14 @@
+ul{
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+}
+ul li{
+    border-style: 2px solid dashed;
+    box-shadow:rebeccapurple;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
